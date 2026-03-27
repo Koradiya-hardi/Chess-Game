@@ -1,0 +1,17 @@
+{
+  "name": "chessinjs-root",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"npm run start:frontend1\" \"npm run start:backend1\"",
+    "start:frontend1": "cd frontend1 && npm run dev",
+    "start:backend1": "cd backend1 && node index.js"
+  },
+  "dependencies": {
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
+    "react-toastify": "^10.0.5"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
